@@ -12,7 +12,7 @@ public class SpringBootEksApplication {
 
     @GetMapping("/greetings")
     public String message() {
-        return "Welcome to javatechie ! app deployed in AWS EKS";
+        return "Welcome to javatechie ! app deployed in AWS EKS.Hello from EKSsp";
     }
 
     public static void main(String[] args) {
