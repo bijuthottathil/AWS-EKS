@@ -3,3 +3,18 @@
 /workspace.xml
 # Environment-dependent path to Maven home directory
 /mavenHomeManager.xml
+# Ignore all `.log` files
+*.log
+
+# Ignore a specific file
+secrets.txt
+
+# Ignore a folder and everything inside it
+/target/
+build/
+
+# Ignore environment files
+.env
+
+# Ignore system-specific files
+.DS_Store
