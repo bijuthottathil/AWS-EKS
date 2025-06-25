@@ -1,4 +1,0 @@
-- job_name: 'springboot-app'
-  metrics_path: '/actuator/prometheus'
-  static_configs:
-    - targets: ['myapp-service:8080']
