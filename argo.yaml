@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/bijuthottathil/AWS-EKS.git
     targetRevision: HEAD
-    path: *.*
+    path: .
   destination:
     server: https://kubernetes.default.svc
     namespace: default
