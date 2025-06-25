@@ -1,12 +1,18 @@
-apiVersion: v1
-kind: Secret
+apiVersion: argoproj.io/v1alpha1
+kind: Application
 metadata:
-  name: my-repo
+  name: eks-app
   namespace: argocd
-  labels:
-    argocd.argoproj.io/secret-type: repository
-stringData:
-  url: https://github.com/bijuthottathil/AWS-EKS.git
-  username:bijuthottathil       # Optional for public repos
-  password: 'SmithaMathew#1526'
-  type: git
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/bijuthottathil/AWS-EKS.git
+    targetRevision: HEAD
+    path: *.*
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
