@@ -1,0 +1,47 @@
+# Maven target directory
+/target/
+
+# Eclipse / IntelliJ / VSCode project files
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Maven local repo conflicts
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Environment files
+.env
+*.env
+
+# Build tools
+/build/
+
+# Temporary files
+*.swp
+*.tmp
+
+# Test coverage reports
+jacoco.exec
+/coverage/
+site/
+
+# Dependency folders (if any)
+node_modules/
+
+# ArgoCD / Kubernetes secrets or deployment output
+*.secret.yaml
+*.bak
+*.generated.yaml
